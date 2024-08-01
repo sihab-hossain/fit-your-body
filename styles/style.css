@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* font-family: "Dancing Script", cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: "Inter", sans-serif;
+}
+
+/* header design */
+
+
+header{
+    max-width: 100%;
+    background-image: linear-gradient(360deg, rgba(17, 17, 17, 0.411),rgba(119, 119, 119, 0.384) 100%);
+}
+.display-flex{
+    display: flex;
+}
+
+.navbar{
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    align-items: center;
+}
+
+.navbar h3{
+    font-size: 3rem;
+    color:rgb(230, 83, 60);
+    font-style: italic;
+    font-weight: 800;
+}
+.navbar ul{
+   gap: 20px;
+   border: 1px solid rgba(114, 113, 112, 0.747);
+   border-radius:30px;
+   padding: 5px;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 5px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+#menu{
+    display: none;
+}
+#home-design{
+    background-color:rgb(230, 83, 60);;
+    border-radius: 20px;
+}
+
+.main-banner{
+    max-width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.main-banner-contant{
+    padding: 20px;
+}
+.main-banner-contant h1{
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 10px;
+}
+.main-banner-contant p{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+
+}
+#sign-text{
+    font-family: "Dancing Script", cursive;
+}
+
+.card-1{
+    align-items: center;
+    gap:10px ;
+    width: 206px;
+    height: 96px;
+    padding: 20px;
+    margin-left: -120px;
+    margin-top: -180px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background-color:rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(20px);
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(230, 83, 60);
+    border-radius: 50%;
+}
+.polygon{
+    width: 25px;
+    height: 25px;
+    margin: 8px 0 0 12px;
+    clip-path: polygon(0 0, 0 100%, 83% 53%);
+    background-color:rgb(250, 250, 249);
+    display: none;
+}
+.card-content{
+    text-align: left;
+}
+
+#number{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(250, 250, 249);
+}
+#number-2{
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(250, 250, 249);
+}
+
+#video-tutorial{
+    font-size: 1rem;
+    font-weight: 400;
+    color:rgba(239, 237, 232, 0.65);
+}
+.card-2{
+    align-items: center;
+    gap:10px ;
+    width: 206px;
+    height: 96px;
+    padding: 20px;
+    margin-left: 220px;
+    margin-top: -380px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background-color:rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(20px);
+}
+.btn-1{
+    margin: 30px 30px 0 0;
+    width: 224px;
+    height: 54px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(230, 83, 60);;
+    color:rgb(255, 255, 255);
+    font-size: 0.9rem;
+}
+.btn-2{
+    margin: 30px 30px 0 0;
+    width: 224px;
+    height: 54px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* responsive area */
+
+
+@media screen  and (max-width:556px){
+    #menu{
+        display: block;
+        color: white;
+        font-size: x-large;
+    }
+   .ul li{
+    display: none;
+   }
+   .navbar ul {
+    border: none;
+   }
+    .main-banner{
+        flex-direction: column;
+        
+    }
+   .card-1{
+    margin-left: 0px;
+   }
+   .card-2{  
+    width: 200px;
+    margin-left: 200px;
+    margin-top: -420px;
+   }
+   .polygon{
+    display: block;
+   }
+    .main-banner-img{
+        padding-left: 20px;
+    }
+    .share-btn{
+        width: 159px;
+        height: 54px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #club{
+        display: none;
+    }
+    .habit-img{
+        flex-direction: column;
+    }
+    .run-card{
+        flex-direction: column;
+    }
+    .run-card{
+        padding: 20px;
+        
+    }
+    .run-contant h1{
+        font-size: 2rem;
+    }
+    .run-contant p{
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .run-card-img{
+        width: 100%;
+    }
+    .btn-responsive{
+        width: 100%;
+    }
+    .btn-1{
+        margin: 20px 10px 0 10px;
+    }
+    .btn-2{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:556px) and (max-width:992px){
+    .run-contant h1{
+        font-size: 1.5rem;
+    }
+    .run-contant p{
+        font-size: 0.8rem;
+        max-width: 50%;
+    }
+    .run-card img{
+        width: 100%;
+        height: 100%;
+    }
+}
