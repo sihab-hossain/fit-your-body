@@ -208,7 +208,7 @@ header{
    align-items: center;
 }
 .habit-img-cointainar{
-    width: 400px;
+    width: 350px;
     height: 100%;
     color: white;
     text-align: center;
@@ -580,13 +580,14 @@ hr{
         width: 100%;
     }
     .main-banner-contant{
-       
-        width: 380px;
+        width: 350px;
         height: 440px;
         margin-bottom: 100px;
+        padding: 5px;
     }
     .main-banner-contant h1{
         font-size: 3rem;
+        
     }
     .btn-1 , .btn-2{
         width: 140px;
@@ -598,11 +599,15 @@ hr{
         margin-left: 0px;
     }
     .card-2{
-        width: 180px;
-        margin-left: 200px;
+        width: 165px;
+        margin-left: 190px;
         margin-top: -400px;
         padding: 10px;
         margin-bottom: 100px;
+        
+    }
+    #video-tutorial{
+        font-size: 14px;
     }
     .habit-contant h1{
         font-size: 2.4rem;
@@ -715,6 +720,7 @@ hr{
         width: 65%;
     }
    
+   
 }
 
 @media screen and (min-width:556px) and (max-width:992px){
@@ -755,12 +761,51 @@ hr{
         gap: 20px;
     }
     .our-offer-list{
-        flex-direction: column;
         align-items: center;
-    
+        flex-direction: column;
     }
     .input-select2{
         width: 97%;
         height: 45px;
+    }
+    .team-membars{
+        width: 600px;
+        margin-top: 80px;
+    }
+    .membar-title h1{
+        font-size: 3rem;
+        font-weight: 800;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .membar-title p{
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.5);
+        text-align: left;
+    }
+    .membars-details{
+        width: 600px;
+        padding: 20px;
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .membar-1{
+        width: 270px;
+        margin-right: 20px;
+    }
+    
+    .membar-1 img{
+        width: 280px;
+        height: 220px;
+        border-radius: 20px;
+        
+    }
+   
+   
+    body{
+        border: 2px solid green;
     }
 }
